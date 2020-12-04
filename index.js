@@ -12,7 +12,7 @@ function opt(argv) {
 var options = opt();
 const workspacePath = path.resolve(options.opt.dir || options.opt.directory || '.');
 const port = options.opt.p || options.opt.port || process.env.PORT || 3000;
-const host = options.opt.host || '127.0.0.1';
+const host = options.opt.host || 'https://visualstudiocode.herokuapp.com';
 const editor = { t: 'editor', port: process.env.PORT || 3000, dir: workspacePath };
 
 if(options.opt.h || options.opt.help){
